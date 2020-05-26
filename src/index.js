@@ -29,7 +29,7 @@ class Board extends React.Component {
 			for(var j = 0; j<3; j++) {
 				squares.push(this.renderSquare(3*i+j)); 
 			}
-			rows.push(<div className="board-row">{squares}<div/>); 
+			rows.push(<div className="board-row">{squares}</div>); 
 	   }
 	   return rows; 
    }
@@ -37,7 +37,7 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-	  {createSquares()}
+	      {this.createSquares()}
       </div>
     );
   }
